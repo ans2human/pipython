@@ -24,3 +24,14 @@ class Posts(models.Model):
     objects = models.Manager()
     def __str__(self):
         return self.title
+
+
+class Project(models.Model):
+    name = models.CharField(max_length=25)
+    startdate = models.DateField(default=timezone.now)
+    employee = models.CharField(max_length=24)
+    client = models.CharField(max_length=25)
+    description = models.TextField()
+
+    def __str__(self):
+        return self.name

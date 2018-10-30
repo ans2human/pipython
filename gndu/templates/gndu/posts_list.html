@@ -10,11 +10,11 @@
 </head>
 <body>
 
-{% for khana in sd %}
+{% for khana in posts_list %}
 
-<h1>{{khana}}</h1>
+<a href="/blog/{{khana.slug }}"><h1>{{khana}}</h1></a>
+
 {%endfor%}
-
 </body>
 </html>
 

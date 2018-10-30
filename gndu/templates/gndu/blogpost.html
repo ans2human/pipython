@@ -13,16 +13,15 @@
 <body>
     
 <header class="diagonal">
-    {% for data in blgs %}
-        <h1>{{ data.title }}</h1>
+        <h1>{{ blgs.title }}</h1>
         
       </header>
       <div class="container">
-        <h3>{{ data.slug }}</h3>
-        <blockquote>{{data.body}}         
-             <cite>~ {{data.author_post}}</cite>
+        <h3>{{ blgs.slug }}</h3>
+        <blockquote>{{blgs.body}}         
+             <cite>~ {{blgs.author_post}}</cite>
         </blockquote>
       </div>
-      {% endfor %} 
+     
 </body>
 </html>
